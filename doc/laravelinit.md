@@ -1,4 +1,4 @@
-###init laravel enviroment experiement
+### init laravel enviroment experiement
 
 1、win10 virturalbox install centos7 virtual machine
 
@@ -18,3 +18,4 @@ root path to public path，add try files,change server_name to ip address
 8、install sublime plugin sftp to edit the file on virtual machine centos use the ftp created by bt panel when init the website
 
 9、chown -R www:www laraveltest then we can edit the file throught the ftp connection
+
