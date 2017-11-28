@@ -33,3 +33,6 @@ Route::get('/','PagesController@root')->name('root');
  Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//用户编辑
+Route::resource('users','UsersController',['only'=>['show','update','edit']]);
