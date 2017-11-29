@@ -11,12 +11,12 @@ class CreateTopicsTable extends Migration
             $table->increments('id');
             $table->string('title')->index();
             $table->text('body');
-            $table->unsigned('user_id')->index();
-            $table->unsigned('category_id')->index();
-            $table->unsigned('reply_count')->default(0);
-            $table->unsigned('view_count')->default(0);
-            $table->unsigned('last_reply_user_id')->default(0);
-            $table->unsigned('order')->default(0);
+            $table->integer('user_id')->unsigned()->index();
+            $table->integer('category_id')->unsigned()->index();
+            $table->integer('reply_count')->unsigned()->default(0);
+            $table->integer('view_count')->unsigned()->default(0);
+            $table->integer('last_reply_user_id')->unsigned()->default(0);
+            $table->integer('order')->unsigned()->default(0);
             $table->text('excerpt');
             $table->string('slug')->nullable();
             $table->timestamps();
