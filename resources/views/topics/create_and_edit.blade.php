@@ -43,7 +43,8 @@
                     </div>
 
                     <div class="form-group">
-                        <textarea name="body" class="form-control" id="editor" rows="3" placeholder="请填入至少三个字符的内容。" required>{{ old('body', $topic->body ) }}</textarea>
+                       <!--  <textarea name="body" class="form-control" id="editor" rows="3" placeholder="请填入至少三个字符的内容。" required>{{ old('body', $topic->body ) }}</textarea> -->
+                       <textarea id="ueditor" name="body"  type="text/plain">{{ old('body', $topic->body ) }}</textarea>
                     </div>
 
                     <div class="well well-sm">
@@ -55,4 +56,15 @@
     </div>
 </div>
 
+@endsection
+
+@section('js')
+ <!-- 引入ueditor -->
+    <script src="{{ asset('ueditor/ueditor.config.js') }}"></script>
+      <script src="{{ asset('ueditor/ueditor.all.js') }}"></script>
+      <script>
+               var ue = UE.getEditor('ueditor');
+
+
+      </script>
 @endsection
