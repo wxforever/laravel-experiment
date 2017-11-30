@@ -33,6 +33,11 @@
                             <li><a href="{{ route('login') }}">登陆<!-- Login --></a></li>
                             <li><a href="{{ route('register') }}">注册<!-- Register --></a></li>
                         @else
+                            <li>
+                                  <a href="{{ route('topics.create') }}">
+                                       <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                  </a>
+                            </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                                     {{ Auth::user()->name }} <span class="caret"></span>
