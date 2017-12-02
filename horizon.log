@@ -2,3 +2,16 @@ Horizon started successfully.
 Horizon started successfully.
 [2017-12-01 15:30:55] Processing: App\Jobs\TranslateSlug
 [2017-12-01 15:30:55] Processed:  App\Jobs\TranslateSlug
+
+                                             
+  [Predis\Connection\ConnectionException]    
+  Connection refused [tcp://127.0.0.1:6379]  
+                                             
+
+
+                                             
+  [Predis\Connection\ConnectionException]    
+  Connection refused [tcp://127.0.0.1:6379]  
+                                             
+
+Horizon started successfully.
