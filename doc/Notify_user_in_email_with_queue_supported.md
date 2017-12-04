@@ -2,7 +2,7 @@
 
 1、 add via and toMail to TopicReplied Notification
 
-2、modify the .env and config/Mail.php to set the email
+2、modify the .env and config/Mail.php to set the email and set pretend to false
 
 3、php artisan config:cache
 
