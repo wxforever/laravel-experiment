@@ -254,3 +254,78 @@ Horizon started successfully.
 [2017-12-04 12:07:18] Processed:  App\Notifications\TopicReplied
 [2017-12-04 12:07:18] Processing: App\Notifications\TopicReplied
 [2017-12-04 12:07:23] Processed:  App\Notifications\TopicReplied
+
+                                             
+  [Predis\Connection\ConnectionException]    
+  Connection refused [tcp://127.0.0.1:6379]  
+                                             
+
+
+                                             
+  [Predis\Connection\ConnectionException]    
+  Connection refused [tcp://127.0.0.1:6379]  
+                                             
+
+
+                                             
+  [Predis\Connection\ConnectionException]    
+  Connection refused [tcp://127.0.0.1:6379]  
+                                             
+
+Horizon started successfully.
+
+                                                                    
+  [Symfony\Component\Debug\Exception\FatalThrowableError]           
+  Parse error: syntax error, unexpected end of file, expecting ';'  
+                                                                    
+
+
+                                                                    
+  [Symfony\Component\Debug\Exception\FatalThrowableError]           
+  Parse error: syntax error, unexpected end of file, expecting ';'  
+                                                                    
+
+
+                                                                    
+  [Symfony\Component\Debug\Exception\FatalThrowableError]           
+  Parse error: syntax error, unexpected end of file, expecting ';'  
+                                                                    
+
+
+                                                                    
+  [Symfony\Component\Debug\Exception\FatalThrowableError]           
+  Parse error: syntax error, unexpected end of file, expecting ';'  
+                                                                    
+
+
+                                                                    
+  [Symfony\Component\Debug\Exception\FatalThrowableError]           
+  Parse error: syntax error, unexpected end of file, expecting ';'  
+                                                                    
+
+
+                                                                    
+  [Symfony\Component\Debug\Exception\FatalThrowableError]           
+  Parse error: syntax error, unexpected end of file, expecting ';'  
+                                                                    
+
+
+                                                                    
+  [Symfony\Component\Debug\Exception\FatalThrowableError]           
+  Parse error: syntax error, unexpected end of file, expecting ';'  
+                                                                    
+
+
+                                                                    
+  [Symfony\Component\Debug\Exception\FatalThrowableError]           
+  Parse error: syntax error, unexpected end of file, expecting ';'  
+                                                                    
+
+
+                                                                    
+  [Symfony\Component\Debug\Exception\FatalThrowableError]           
+  Parse error: syntax error, unexpected end of file, expecting ';'  
+                                                                    
+
+Horizon started successfully.
+Horizon started successfully.
