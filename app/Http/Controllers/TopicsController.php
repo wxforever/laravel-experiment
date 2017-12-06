@@ -8,11 +8,12 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\TopicRequest;
 use App\Models\Category;
 use Auth;
+use App\Handlers\ImageUploadHandler;
 class TopicsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index', 'show']]);
+        $this->middleware('auth', ['except' => ['index', 'show','uploadImage']]);
     }
 
 	public function index(Request $request,Topic $topic)
@@ -66,4 +67,35 @@ class TopicsController extends Controller
 
 		return redirect()->route('topics.index')->with('success', '成功删除!');
 	}
+
+	 public function uploadImage(Request $request, ImageUploadHandler $uploader)
+    {
+
+
+        // 初始化返回数据，默认是失败的
+        $data = [
+            'success'   => false,
+            'msg'       => '上传失败!',
+            'file_path' => ''
+        ];
+        // 判断是否有上传文件，并赋值给 $file
+        if ($file = $request->upload) {
+            // 保存图片到本地
+            $result = $uploader->save($request->upload, 'topics', 'ckeditor', 1024);
+            // 图片保存成功的话
+            if ($result) {
+                $data['file_path'] = $result['path'];
+                $data['msg']       = "上传成功!";
+                $data['success']   = true;
+            }
+        }else{
+        	echo '文件不存在';
+        	exit();
+        }
+       // return $data;
+        $cb = $request->CKEditorFuncNum; //获得ck的回调id  
+         echo "<script>window.parent.CKEDITOR.tools.callFunction($cb, '{$data['file_path']}', '');</script>"; //图片上传成功，通知ck图片的url  
+         exit();
+    
+}
 }
