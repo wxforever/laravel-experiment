@@ -37,5 +37,6 @@ CKEDITOR.editorConfig = function( config ) {
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 
 	config.image_previewText=' '; //预览区域显示内容
-	config.filebrowserImageUploadUrl='/upload_image'
+	config.filebrowserImageUploadUrl='/upload_image';
+	config.language = 'zh-cn';
 };
