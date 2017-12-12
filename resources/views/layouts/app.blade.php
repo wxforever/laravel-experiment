@@ -8,10 +8,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title','laravel实验')<!-- {{ config('app.name', 'Laravel') }} --></title>
+      <title>@yield('title', 'Laravel实验') - {{ setting('site_name', 'Laravel实验') }}</title>
+    <meta name="description" content="@yield('description', setting('seo_description', 'laravel实验'))" />
+    <meta name="keyword" content="@yield('keyword', setting('seo_keyword', 'laravel实验'))" />
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('styles')
 </head>
 <body>
     <div id="app">
