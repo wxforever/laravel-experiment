@@ -374,3 +374,54 @@ Horizon started successfully.
                                              
 
 Horizon started successfully.
+
+                                             
+  [Predis\Connection\ConnectionException]    
+  Connection refused [tcp://127.0.0.1:6379]  
+                                             
+
+
+                                             
+  [Predis\Connection\ConnectionException]    
+  Connection refused [tcp://127.0.0.1:6379]  
+                                             
+
+
+                                             
+  [Predis\Connection\ConnectionException]    
+  Connection refused [tcp://127.0.0.1:6379]  
+                                             
+
+Horizon started successfully.
+
+                                             
+  [Predis\Connection\ConnectionException]    
+  Connection refused [tcp://127.0.0.1:6379]  
+                                             
+
+Horizon started successfully.
+
+                                             
+  [Predis\Connection\ConnectionException]    
+  Connection refused [tcp://127.0.0.1:6379]  
+                                             
+
+
+                                             
+  [Predis\Connection\ConnectionException]    
+  Connection refused [tcp://127.0.0.1:6379]  
+                                             
+
+
+                                             
+  [Predis\Connection\ConnectionException]    
+  Connection refused [tcp://127.0.0.1:6379]  
+                                             
+
+Horizon started successfully.
+[2017-12-25 11:48:41] Processing: App\Jobs\TranslateSlug
+[2017-12-25 11:48:42] Processed:  App\Jobs\TranslateSlug
+[2017-12-25 13:37:25] Processing: App\Notifications\TopicReplied
+[2017-12-25 13:37:25] Processing: App\Notifications\TopicReplied
+[2017-12-25 13:37:25] Processed:  App\Notifications\TopicReplied
+[2017-12-25 13:37:29] Processed:  App\Notifications\TopicReplied
