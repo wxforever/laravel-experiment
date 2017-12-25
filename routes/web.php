@@ -49,3 +49,4 @@ Route::resource('notifications', 'NotificationsController', ['only' => ['index']
 Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload_image');
 
 Route::get('permission-denied', 'PagesController@permissionDenied')->name('permission-denied');
+Route::resource('links', 'LinksController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
