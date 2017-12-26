@@ -83,7 +83,7 @@ return array(
      */
     'permission' => function () {
        // return Auth::check();
-        return Auth::user()->can('manage_contents');
+        return Auth::check()&&Auth::user()->can('manage_contents');
     },
 
     /*
